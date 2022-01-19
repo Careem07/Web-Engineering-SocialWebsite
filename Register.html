@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <title>Sign up page</title>
+</head>
+
+<body>
+
+    
+    <center> <big>
+            <h1>Sign up</h1>
+        </big></center> <br>
+    <center>
+        <h2>Welcome to Nk website</h2>
+    </center>
+    <div class="div1">
+        <div class="div2">
+            <form action="Register.php" method="post">
+                <label for="name"><strong>Name</strong></label> <br>
+                <input type="text" name="name" id="name" placeholder="Alex" required>
+                <label for="username"><strong>Username</strong></label> <br>
+                <input type="text" name="username" id="username" placeholder="any@example.com" required> <br> <br>
+                <label for="passw"><strong>Password</strong></label> <br>
+                <input type="password" name="password1" id="password1" placeholder=" 458-656" required> <br>
+                <label for="passw"><strong>Re-enter password</strong></label> <br>
+                <input type="password" name="password2" id="password2" placeholder=" 458-656" required> <br> <br>
+                <label for="date"><strong>Date of birth</strong></label> <br>
+                <input type="date" name="date" id="date" style="width: 40%;"> <br>
+                <a href="Login.html">Aleady have an account?Login</a> <br> <br>
+                <input type="submit" value="Submit" name="submit_btn" id="submit_btn">
+
+
+
+            </form>
+        </div>
+
+    </div>
+
+    <style>
+        body {
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+            font-size: 14px;
+            position: relative;
+			 background: url(register.jpg) no-repeat;
+			align-items: center;
+			background-size: cover;
+        }
+		
+		h1 , h2 {
+
+        font-size: xx-large;
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 	
+	}
+
+        form {
+            height: 520px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid slategrey;
+            box-shadow: 0 0 40px rgb(65, 22, 22);
+            padding: 50px 35px;
+        }
+        
+        input {
+
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            background: transparent;
+
+        }
+
+        input[type=submit] {
+
+            background-color: greenyellow;
+            margin: 10px;
+            border: none;
+            margin-bottom: 20%;
+            
+            width: 60%;
+            margin-left: 20%;
+            box-shadow: 0 0 40px seagreen;
+            cursor: pointer;
+			transition: 2s;
+
+        }
+
+        input[type=submit]:hover {
+            background-color: green;
+
+        }
+
+        input[type=text] {
+
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            
+
+        }
+
+        input[type=text]:hover {
+
+            border-color: blue;
+
+        }
+
+        input[type=date]:hover {
+
+            border-color: blue;
+
+        }
+
+        input[type=password]:hover {
+
+            border-color: blue;
+        }
+
+        a:hover {
+            color: brown;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            margin-left: 30%;
+
+        }
+        img{
+        background-image: url("register.jpg");
+        background-size: contain;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    </style>
+
+
+</body>
